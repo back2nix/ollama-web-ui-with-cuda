@@ -71,8 +71,8 @@
               # models manually in the UI.
               models = [
                 "codestral"
+                "llama3"
                 # "llama2-uncensored"
-                # "llama3"
               ];
 
               package = pkgs.ollama.override {
@@ -100,6 +100,7 @@
                 RAG_EMBEDDING_MODEL = "mxbai-embed-large:latest";
                 RAG_EMBEDDING_MODEL_AUTO_UPDATE = "True";
                 RAG_RERANKING_MODEL_AUTO_UPDATE = "True";
+                DOCS_DIR = "${dataDirBase}/docs";
               };
             };
           };
