@@ -69,7 +69,11 @@
               #
               # You can also initialize this to empty list, and download the
               # models manually in the UI.
-              models = ["codestral" "llama2-uncensored" "llama3"];
+              models = [
+                "codestral"
+                # "llama2-uncensored"
+                # "llama3"
+              ];
 
               package = pkgs.ollama.override {
                 acceleration = "cuda";
